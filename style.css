@@ -1,0 +1,373 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to right, #4a4a4a, #006b83);
+    background-attachment: fixed; 
+    color: white;
+    min-height: 100vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: linear-gradient(to right, #eeeeee, #023846);
+}
+
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #140300;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px 18px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #eeeeee;
+    color: #023846;
+    transform: scale(1.12);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+/* HOME */
+.home {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.home h1 {
+    margin-bottom: 15px;
+}
+
+
+.garis {
+    border: none;
+    height: 2px;
+    background-color: white;
+    margin-top: 20px;
+}
+
+
+.grid-kenalan {
+    background: #eeeeee;
+    color: #222222;
+
+    width: 500px;
+    max-width: 90%;
+
+    padding: 30px;
+    margin: 40px auto;
+
+    border-radius: 15px;
+    border: 2px solid #023846;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+
+    text-align: center;
+}
+
+.grid-kenalan h2 {
+    margin-top: 0;
+    color: #023846;
+}
+
+.grid-kenalan p {
+    line-height: 1.7;
+}
+
+/* FOTO */
+.pembungkus-foto {
+    width: 200px;
+    margin: 30px auto;
+}
+
+.pembungkus-foto img {
+    width: 200px;
+    height: auto;
+    display: block;
+
+    border-radius: 15px;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 40px;
+
+    margin-top: 40px;
+    padding: 20px;
+}
+
+
+.foto-about {
+    width: 140px;
+    flex-shrink: 0;
+}
+
+.foto-about img {
+    width: 140px;
+    height: auto;
+
+    display: block;
+
+    border-radius: 15px;
+    border: 2px solid white;
+}
+
+
+.data-diri {
+    width: 500px;
+
+    padding: 25px;
+
+    background-color: #eeeeee;
+    color: black;
+
+    border: 2px solid #023846;
+    border-radius: 12px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+
+    margin: 0;
+}
+
+
+.data-diri h2 {
+    text-align: center;
+
+    color: #023846;
+
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+
+.data-diri p {
+    margin: 10px 0;
+    line-height: 1.4;
+}
+.about-header {
+    text-align: left;
+    padding: 50px 0 20px 80px;
+}
+
+.about-header h1 {
+    margin-bottom: 15px;
+    font-size: 32px;
+}
+
+.about-header p {
+    font-size: 17px;
+}
+/* KONTAK */
+.kontak-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.kontak-box {
+    width: 200px;
+    padding: 25px;
+    background-color: #eeeeee;
+    color: #222222;
+    border: 2px solid #023846;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.kontak-box h2 {
+    margin-top: 0;
+    color: #023846;
+}
+
+.kontak-box p {
+    margin-bottom: 0;
+}
+
+.foto-kontak {
+    width: 150px;
+    margin: 30px auto;
+}
+
+.foto-kontak img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    object-position: center 30%;
+}
+
+.teks-jalan {
+    display: flex;
+    align-items: center;
+    height: 45px;
+    margin: 15px 50px 0;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+}
+
+.label-jalan {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 18px;
+    background: #eeeeee;
+    color: #023846;
+    font-size: 13px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.jalan-wrapper {
+    overflow: hidden;
+    white-space: nowrap;
+    flex: 1;
+}
+
+.jalan-wrapper p {
+    display: inline-block;
+    margin: 0;
+    padding-left: 100%;
+    font-size: 14px;
+    font-weight: bold;
+    animation: jalan 15s linear infinite;
+}
+
+@keyframes jalan {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+footer {
+  background: linear-gradient(to right,#271d1d, #43717b); 
+  color: #fff;
+  padding: 40px 20px 0;
+  position: relative;
+   z-index: 5;   
+}
+
+.footer-content {
+  margin-bottom: 20px;
+}
+
+.sub-footer {
+  border-top: 1px solid #444; 
+  text-align: center;         
+  padding: 15px 0;          
+  font-size: 14px;           
+  color: #aaa;                
+}
+.kontak-link {
+    text-decoration: none;
+    color: inherit; 
+}
+
+
+.kontak-box {
+    transition: all 0.3s ease; 
+}
+
+.kontak-link:hover .kontak-box {
+    transform: translateY(-8px) scale(1.03); 
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4); 
+    border-color: #eeeeee; 
+    background-color: #ffffff; 
+}
+.pembungkus-foto img {
+    transition: all 0.4s ease; 
+}
+
+.pembungkus-foto img:hover {
+    transform: scale(1.08) rotate(2deg); 
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.4);
+}
+.foto-kontak img {
+    transition: all 0.4s ease; 
+}
+
+.foto-kontak img:hover {
+    transform: scale(1.08) rotate(2deg); 
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.4);
+}
+.foto-about img {
+    transition: all 0.4s ease; 
+}
+
+.foto-about img:hover {
+    transform: scale(1.08) rotate(2deg); 
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.4);
+}
+.grid-kenalan p {
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: all 0.4s ease; 
+}
+
+.grid-kenalan p:hover {
+    background-color: #023846; 
+    color: #ffffff;            
+    box-shadow: 0 4px 12px rgba(2, 56, 70, 0.2);
+}
+
+
+.grid-kenalan p:hover b {
+    color: #00adb5;        
+}
+
+.data-diri .data {
+    padding: 8px 12px;
+    margin: 6px 0;
+    border-radius: 6px;
+    transition: all 0.3s ease; 
+}
+
+.data-diri .data:hover {
+    background-color: #023846; 
+    color: #ffffff;           
+    padding-left: 18px;        
+    box-shadow: 0 4px 10px rgba(2, 56, 70, 0.25);
+    cursor: default;
+}
+
+.data-diri .data:hover b {
+    color: #00adb5; 
+}
+.logo {
+    transition: all 0.3s ease;
+}
+
+.logo:hover {
+    color: #d40404; /* Berubah menjadi putih */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6); /* Sedikit efek menyala */
+    cursor: pointer;
+}
